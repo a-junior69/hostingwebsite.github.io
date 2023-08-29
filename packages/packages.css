@@ -1,0 +1,68 @@
+main {
+  padding: 2rem;
+  background-image: url(../images/plans-background.jpg);
+  background-position: 100%;
+  background-position-x: center;
+}
+.packages {
+  width: 80vw;
+  margin: 1rem 0;
+  border-left: none;
+  position: relative;
+  overflow: hidden;
+}
+.packages:hover,
+.packages:active {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.packages a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 2rem;
+}
+.package__badge {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  margin: 0;
+  transform: rotateZ(45deg) translateX(2rem) translateY(-2rem);
+  width: 12rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: white;
+  background-color: #ff5454;
+  padding: 0.5rem;
+}
+.package__subtitle {
+  color: #cce5eb;
+}
+.package__info {
+  padding: 1rem;
+  border: 1px solid var(--primary-color);
+  background: white;
+}
+.clearfix {
+  clear: both;
+}
+#plus {
+  background: rgba(2, 76, 125, 0.95);
+}
+
+#free {
+  background: rgba(2, 76, 125, 0.95);
+  float: right;
+  border-right: none;
+  border-left: 4px solid rgba(2, 76, 125, 0.95);
+  text-align: right;
+}
+#premium {
+  background: rgba(17, 45, 78, 0.95);
+}
+#premium .package__title {
+  color: white;
+}
+#premium .package__subtitle {
+  color: #bbb;
+}
